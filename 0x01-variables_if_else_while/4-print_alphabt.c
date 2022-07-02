@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
-*main - Entry poimt
-*Return: Always 0
+*main - Program to print alphabet letters except q and e followed by new line
+*Return: return 0
 */
 int main(void)
 {
-char letter;
+int letter;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
-for (letter = 'A'; letter <= 'Z'; letter++)
+if (letter == 'q' || letter == 'e')
 {
-putchar (letter);
+continue;
 }
-break;
+putchar(letter);
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }
