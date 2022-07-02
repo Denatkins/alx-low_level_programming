@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
-*
-* main - Entry poimt
-*
-* Return: Always 0
+*main - Entry poimt
+*Return: Always 0
 */
 int main(void)
 {
