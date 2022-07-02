@@ -1,5 +1,3 @@
-"ESC"
-"1G=G"
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -19,3 +17,4 @@ else
 printf("%d is zero\n", n);
 return (0);
 }
+: set number
