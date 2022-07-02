@@ -17,4 +17,4 @@ else
 printf("%d is zero\n", n);
 return (0);
 }
-: set number
+(: set number);
