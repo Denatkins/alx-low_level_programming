@@ -1,6 +1,6 @@
 #include <stdio.h
 
-int main(int agc, char* argv[])
+int main(void)
 {
 int n;
 int a[5];
