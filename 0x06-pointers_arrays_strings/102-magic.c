@@ -1,6 +1,6 @@
 #include <stdio.h
 
-int main(void) - Entry point of the program
+int main(void)
 {
 int n;
 int a[5];
