@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* - you are not allowed to use a variable line */
 int main(void)
 {
 int n;
