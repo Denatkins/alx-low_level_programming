@@ -2,6 +2,12 @@
 #define MAIN_H
 #include <stdio.h>
 
+/**
+* File: main.h
+* Auth: Denatkins
+* Desc: Header file contaning the prototypes of all functions
+*/
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
