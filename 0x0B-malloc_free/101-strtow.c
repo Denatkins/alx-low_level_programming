@@ -41,7 +41,7 @@ return (NULL);
 n = wrdcnt(str);
 if (n == 1)
 return (NULL);
-q = (char **)malloc(n * sizeof(char *));
+q = (char **)malloc(n *sizeof(char *));
 if (q == NULL)
 return (NULL);
 q[n - 1] = NULL;
