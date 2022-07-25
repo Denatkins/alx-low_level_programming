@@ -7,7 +7,6 @@
 *
 * Return: a pointer to the array, or NULL if it fails
 */
-
 char *_strdup(char *str)
 {
 unsigned int i, j;
@@ -18,7 +17,7 @@ return (NULL);
 for (i = 0; str[i]; i++)
 ;
 i++;
-s = malloc(i * sizeof(char));
+s = malloc(size * sizeof(char));
 if (s == NULL)
 {
 return (NULL);
