@@ -53,7 +53,7 @@ if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 ;
 j++;
-q[qa] = (char *)malloc(j * sizeof(char));
+q[qa] = (char *)malloc(j *sizeof(char));
 j--;
 if (q[qa] == NULL)
 {
