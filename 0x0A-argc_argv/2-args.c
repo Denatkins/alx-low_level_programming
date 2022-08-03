@@ -1,22 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-* main - the entry point
-* @argc: argument counter
-* @argv: array of pointer to strings
+* main - prints all arguments it receives.
+* @argc: argument count
+* @argv: arguments
 *
 * Return: 0
 */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 int i;
 
-i = 0;
-while (i < argc)
-{
+for (i = 0; i < argc; i++)
 printf("%s\n", argv[i]);
-i++;
-}
+
 return (0);
 }
