@@ -1,31 +1,38 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
-* main - adds positive numbers
-* @argc: argument counter
-* @argv: array of pointer to strings
+* main - adds positive numbers.
+* @argc: argument count
+* @argv: arguments
 *
-* Return: 0 if no errors, else
+* Return: 0
 */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int i, j, sum = 0;
-if (argc < 1)
+int i, n, sum = 0;
+char *flag;
+
+if (argc < 2)
+{
 printf("0\n");
+return (0);
+}
 
-for (i = 1; i < argc; i++)
+for (i = 1; argv[i]; i++)
 {
-for (j = 0; argv[i][j]; j++)
-{
-if (!isdigit(argv[i][j]))
+n = strtol(argv[i], &flag, 10);
+if (*flag)
 {
 printf("Error\n");
 return (1);
 }
+else
+{
+sum += n;
 }
-sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
+
 return (0);
 }
